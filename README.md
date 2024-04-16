@@ -1,33 +1,4 @@
-<style>
-body {
-    counter-reset: h1
-}
-h1 {
-    counter-reset: h2;
-    border-bottom: 0;
-}
-h2 {
-    counter-reset: h3
-}
-h3 {
-    counter-reset: h4
-}
-h2:not(.toc):before {
-    content: counter(h2) ". ";
-    counter-increment: h2
-}
-h3:before {
-    counter-increment: h3;
-    content: counter(h2) "." counter(h3) ". "
-}
-h4:before {
-    counter-increment: h4;
-    content: counter(h2) "." counter(h3) "." counter(h4) ". "
-}
-.toc:before {
-    content: ""
-}
-</style>
+
 
 <h1 align="center">Changing page's content type in Wagtail Admin</h1>
 <p align="center">Google Summer of Code 2024 proposal for Wagtail CMS by Abdelrahman Hamada</p>
